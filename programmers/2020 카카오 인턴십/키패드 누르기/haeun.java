@@ -16,8 +16,6 @@ public class Programmers_lv1_키패드누르기 {
         // 왼손, 오른손 위치 비교
         int distL = 0;
         int distR = 0;
-        // 가운데 키패드
-        int[] center = {2, 5, 8, 11};
         
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == 0) numbers[i] = 11;

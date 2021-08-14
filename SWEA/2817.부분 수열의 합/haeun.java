@@ -1,5 +1,3 @@
-package com.ssafy.solution;
-
 import java.util.Scanner;
 
 public class SW_D3_2817_부분수열의합 {

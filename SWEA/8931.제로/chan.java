@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class chan {
     public static void main(String[] args) throws Exception {
-		System.setIn(new FileInputStream("src/com/ssafy/study0814/input8931.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
 		

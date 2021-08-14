@@ -1,5 +1,3 @@
-package com.ssafy.solution;
-
 import java.util.Scanner;
 
 // 알고리즘스터디

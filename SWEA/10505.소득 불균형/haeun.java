@@ -1,5 +1,3 @@
-package com.ssafy.solution;
-
 import java.util.Scanner;
 
 public class SW_D3_10505_소득불균형 {

@@ -1,5 +1,3 @@
-package com.ssafy.solution;
-
 import java.util.Scanner;
 import java.util.Stack;
 

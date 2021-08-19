@@ -1,24 +1,60 @@
 package SWEA;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
-public class SWEA_1213_String {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+public class SWEA_1215_회문1 {
+    static char[][] map;
+    static ArrayList<Character> al = new ArrayList<>();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        for (int t = 1; t <= 10 ; t++) {
-            Integer.parseInt(sc.nextLine());    // 테스트케이스 번호
-            String findstr = sc.nextLine();     // 찾고자 하는 문자열
-            String str = sc.nextLine();         // 제공된 문자열
-            int cnt = 0;                        // 문자열 포함 개수를 세기 위한 카운트
+        for (int t = 1; t <= 10; t++) {
+            int len = Integer.parseInt(br.readLine());
+            // 길이 1짜리를 찾으면
+            if(len == 1) System.out.println("#" + t + " " + 64);
+            // 값 입력
+            map = new char[8][8];
+            for (int i = 0; i < 8; i++) {
+                String str = br.readLine();
+                for (int j = 0; j < 8; j++) {
+                    map[i][j] = str.charAt(j);
+                }
+            }
 
-            while(true) {
-                int idx = str.indexOf(findstr); // 해당 index에 필요한 문자열이 있으면 해당 index 대입
-                if(idx == -1) break;            // 필요한 문자열이 없으면 -1이 출력되므로 반복문 탈출
-                cnt++;
-                str = str.substring(idx+findstr.length());  // 문자열이 포함된 위치까지 자르기
+            int cnt = 0;
+            // 가로 회문 찾기
+            for (int i = 0; i < 8; i++) {
+                for (int j = 0; j < 8 - len + 1; j++) {
+                    al.clear();
+                    for (int k = 0; k < len; k++) {
+                        al.add(map[i][j + k]);
+                    }
+                    if(search()) cnt++;
+                    else continue;
+                }
+            }
+
+            for (int i = 0; i < 8; i++) {
+                for (int j = 0; j < 8 - len + 1; j++) {
+                    al.clear();
+                    for (int k = 0; k < len; k++) {
+                        al.add(map[j + k][i]);
+                    }
+                    if(search()) cnt++;
+                    else continue;
+                }
             }
             System.out.println("#" + t + " " + cnt);
         }
+    }
+
+    private static boolean search() {
+        for (int i = 0; i < al.size() / 2; i++) {
+            if(al.get(i) != al.get((al.size()-1) - i)) return false;
+        }
+        return true;
     }
 }

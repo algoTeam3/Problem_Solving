@@ -33,7 +33,7 @@ public class SW_D3_1240_단순2진암호코드 {
 			String code = "";
 			// 암호문 분석
 			for (int i = 0; i < allCode.length(); i+=7) {
-        // 숫자 추출
+       				// 숫자 추출
 				String temp = allCode.substring(i, i+7);
 				if (temp.equals("0001101")) code += "0";
 				else if (temp.equals("0011001")) code += "1";

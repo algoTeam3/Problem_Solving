@@ -30,5 +30,5 @@
 1) 새로운 branch를 하나 만듭니다.  
 2) 새로 만든 branch에 코드를 push합니다.  
 3) push 완료 후 GitHub branch 페이지에 들어오면 Pull Request(PR)할건지 버튼이 생깁니다. 클릭!
-4) 코드 리뷰 받고 <b>스터디 시간 전에 merge</b>하면 됩니다. (merge 후 branch는 삭제해도 됩니다.)
-리뷰는 오픈된 PR에 하면 됩니당. 
+4) 코드 리뷰 받고 <b>스터디 시간 전에 merge</b>하면 됩니다. (merge 후 branch 삭제)
+리뷰는 오픈된 PR에 합니다.

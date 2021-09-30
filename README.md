@@ -1,10 +1,50 @@
 # DON'T FREAKING SLEEP
-> 2021.08.03 ~
+> 2021.08.03 ~  
+> 
+> **사용 언어 : JAVA**
+<br>  
+
 ## :pencil: 규칙 
 - 화요일, 목요일 스터디 시간에 문제 하나씩 풀고 풀이 공유
 - 금요일전까지 개인이 풀 문제 배포
 - 다음 스터디 날까지 4문제 풀어오기   
-  
+<br>  
+
+## 🙋‍♂️ 팀원
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/BusChanny">
+        <img src="https://avatars.githubusercontent.com/u/80505099?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>박창현</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DECOY-DUCK">
+        <img src="https://avatars.githubusercontent.com/u/51963264?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>오재문</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Chae-EunJeong">
+        <img src="https://avatars.githubusercontent.com/u/68576770?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>정채은</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Haeun-Jung">
+        <img src="https://avatars.githubusercontent.com/u/53832553?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>정하은</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+<br>  
+
 ## 🌷 스터디 진행 (22시 30분 ~ 0시 30분)
 - **화요일** 
    - 문제 선정 + 문제 풀이 공유 및 피드백
@@ -12,16 +52,19 @@
 - **목요일**
    - 문제 선정 +  문제 풀이 공유 및 피드백 x 2
    - 과제 및 실습 공유
+<br>  
 
 ## 📙 알고리즘 문제 사이트
 - [백준](https://www.acmicpc.net/)
 - [SWEA](https://swexpertacademy.com/main/main.do)
 - [프로그래머스](https://programmers.co.kr/learn/challenges)
+<br>  
 
 ## 🌱 디렉토리 및 파일 구조
-- `플랫폼/카테고리(생략가능)/문제번호.문제명/자기이름.java` 형식
+`플랫폼/카테고리(생략가능)/문제번호.문제명/자기이름.java` 형식
 - 예시 1 : /programmers/2019KAKAO블라인드/오픈채팅방/chan.java
 - 예시 2 : /BOJ/22858.원상복구/chan.java
+<br>  
 
 ## 🥕 코드 리뷰  
 - [fork해서 Pull Request 보내는 법](https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/)  

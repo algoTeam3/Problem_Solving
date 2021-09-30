@@ -42,6 +42,20 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+    </td>
+    <td align="center">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+    </td>
+    <td align="center">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+    </td>
+    <td align="center">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+    </td>
+  </tr>
 </table>
 <br>  
 

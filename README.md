@@ -44,7 +44,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=pch1656">
     </td>
     <td align="center">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">

@@ -50,7 +50,7 @@
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
     </td>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso">
     </td>
     <td align="center">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">

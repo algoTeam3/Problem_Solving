@@ -31,7 +31,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/DECOY-DUCK">
-        <img src="https://avatars.githubusercontent.com/u/51963264?v=4" width="100px;" alt=""/>
+        <img src="https://user-images.githubusercontent.com/51963264/135501324-19b47ac6-2a50-4a58-9ead-ef203e1bf308.jpg" width="100px;" alt=""/>
         <br />
         <sub>오재문</sub>
       </a>

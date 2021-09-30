@@ -53,7 +53,7 @@
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso">
     </td>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=gkdms325">
     </td>
   </tr>
 </table>

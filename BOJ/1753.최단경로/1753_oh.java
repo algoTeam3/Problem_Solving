@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * 75번라인 pq에 노드 추가할때 가중치합을 넣어줘야
  * 69번라인이 제대로 작동한다
  */
-public class BOJ1753 {
+public class 1753_oh {
     static int v, e, start;
     static ArrayList<ArrayList<node>> arr;
     static int[] visit;

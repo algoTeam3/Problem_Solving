@@ -19,7 +19,7 @@
 > **사용 언어 : JAVA**
 <br>  
 
-```
+```java
 
  while(!stack.isempty()){
   

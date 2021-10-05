@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Expert1263 {
+public class oh_1263 {
     static int N;
     static int[][] map;
     static int[] visit;

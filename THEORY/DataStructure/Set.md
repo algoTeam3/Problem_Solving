@@ -121,8 +121,39 @@ O(log n)이다.)
 <img src="https://static.solved.ac/tier_small/4.svg" width="14" height="14">[15829.Hashing](https://boj.kr/1764)
 
 ### HashSet 내부 작동 과정
+```java
+public class HashSet<E>
+    extends AbstractSet<E>
+    implements Set<E>, Cloneable, java.io.Serializable {
+    static final long serialVersionUID = -5024744406713321676L;
 
-HashSet은 내부적으로 HashMap으로 구현되어 있다. Key Object에 저장하고 Value Object에는 dummy data를 집어 넣는다.
+    private transient HashMap<E, Object> map;//transient는 Serializable에서 제외하고 싶을떄
+
+    // Dummy value to associate with an Object in the backing Map
+    private static final Object PRESENT = new Object();
+
+    /**
+     * Constructs a new, empty set; the backing <tt>HashMap</tt> instance has
+     * default initial capacity (16) and load factor (0.75).
+     */
+    public HashSet() {
+        map = new HashMap<>();
+    }
+}
+```
+탐색
+```java
+public boolean contains(Object o) {
+        return map.containsKey(o);
+    }// 특별한게 있는 줄 알았는데 그냥 이거 밖에 없다
+```
+추가
+```java
+ public boolean add(E e) {
+        return map.put(e, PRESENT)==null;
+    }
+```
+HashSet은 내부적으로 HashMap으로 구현되어 있다. Key Object에 저장하고 Value Object에는 dummy data(PRESENT)를 집어 넣는다.   
 key Object는 고유해야 하기 때문에 중복으로 저장되는 일은 없다. HashSet이 중복없이 Set을 만드는 과정은 다음과 같다.
 
 - 저장하려는 객체의 hashCode()를 호출
@@ -134,4 +165,5 @@ key Object는 고유해야 하기 때문에 중복으로 저장되는 일은 없
 
 그래서 결국 set 탐색 속도가 빠른 이유는 hashmap을 사용해서 마치 인덱스값을 알고 있는 배열처럼을 사용해서라고 생각하면 될 것 같다  
 앞으로 빠르게 탐색할 일이 있다면 set을 사용해보자. 그리고 아는게 많이 없어서 뭔가 추가적으로 알아낸것이 있다면 더 추가 해야될듯 하다
+set을 온전히 이해하기 위해서 map에 대한 이해가 선행되야 될거 같다.
 

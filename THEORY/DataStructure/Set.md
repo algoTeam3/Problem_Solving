@@ -118,7 +118,7 @@ O(log n)이다.)
 
 혹시 hash에 대해 알고 싶다면 이 문제를 풀어보자.
 
-<img src="https://static.solved.ac/tier_small/4.svg" width="14" height="14">[15829.Hashing](https://boj.kr/1764)
+<img src="https://static.solved.ac/tier_small/4.svg" width="14" height="14">[15829.Hashing](https://boj.kr/15829)
 
 ### HashSet 내부 작동 과정
 ```java

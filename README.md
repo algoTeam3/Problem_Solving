@@ -68,16 +68,16 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=pch1656">
+      <a href="https://solved.ac/profile/pch1656"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=pch1656"></a>
     </td>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">
+      <a href="https://solved.ac/profile/tph01198"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198"></a>
     </td>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso">
+      <a href="https://solved.ac/profile/procdso"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso"></a>
     </td>
     <td align="center">
-      <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=gkdms325">
+      <a href="https://solved.ac/profile/gkdms325"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=gkdms325"></a>
     </td>
   </tr>
 </table>

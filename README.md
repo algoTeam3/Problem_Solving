@@ -35,52 +35,11 @@
 <br>  
 
 ## 🙋‍♂️ 팀원
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/BusChanny">
-        <img src="https://avatars.githubusercontent.com/u/80505099?v=4" width="100px;" alt=""/>
-        <br />
-        <sub>박창현</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/DECOY-DUCK">
-        <img src="https://user-images.githubusercontent.com/51963264/135501324-19b47ac6-2a50-4a58-9ead-ef203e1bf308.jpg" width="100px;" alt=""/>
-        <br />
-        <sub>오재문</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Chae-EunJeong">
-        <img src="https://avatars.githubusercontent.com/u/68576770?v=4" width="100px;" alt=""/>
-        <br />
-        <sub>정채은</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Haeun-Jung">
-        <img src="https://avatars.githubusercontent.com/u/53832553?v=4" width="100px;" alt=""/>
-        <br />
-        <sub>정하은</sub>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://solved.ac/profile/pch1656"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=pch1656"></a>
-    </td>
-    <td align="center">
-      <a href="https://solved.ac/profile/tph01198"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198"></a>
-    </td>
-    <td align="center">
-      <a href="https://solved.ac/profile/procdso"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso"></a>
-    </td>
-    <td align="center">
-      <a href="https://solved.ac/profile/gkdms325"><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=gkdms325"></a>
-    </td>
-  </tr>
-</table>
+|[<img src="https://avatars.githubusercontent.com/u/80505099?v=4" width="230px;" alt=""/>](https://github.com/BusChanny) | 👑 [<img src="https://avatars.githubusercontent.com/u/68576770?v=4" width="200px">](https://github.com/Chae-EunJeong)|[<img src="https://avatars.githubusercontent.com/u/51963264?v=4" width="230px" >](https://github.com/DECOY-DUCK)|[<img src="https://avatars.githubusercontent.com/u/53832553?v=4" width="230" >](https://github.com/Haeun-Jung)|
+|:---:|:---:|:---:|:---:|
+|[박창현](https://github.com/web-doh) |[✨정채은✨](Chae-EunJeong) |[오재문](DECOY-DUCK)| [정하은](https://github.com/web-doh)|
+|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=pch1656">](https://solved.ac/profile/pch1656)|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso">](https://solved.ac/profile/procdso)|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">](https://solved.ac/profile/tph01198)|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=gkdms325">](https://solved.ac/profile/gkdms325)|   
+   
 <br>  
 
 ## 🌷 스터디 진행 (22시 30분 ~ 0시 30분)

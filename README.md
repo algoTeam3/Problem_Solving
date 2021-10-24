@@ -37,7 +37,7 @@
 ## 🙋‍♂️ 팀원
 |[<img src="https://avatars.githubusercontent.com/u/80505099?v=4" width="230px;" alt=""/>](https://github.com/BusChanny) | 👑 [<img src="https://avatars.githubusercontent.com/u/68576770?v=4" width="200px">](https://github.com/Chae-EunJeong)|[<img src="https://avatars.githubusercontent.com/u/51963264?v=4" width="230px" >](https://github.com/DECOY-DUCK)|[<img src="https://avatars.githubusercontent.com/u/53832553?v=4" width="230" >](https://github.com/Haeun-Jung)|
 |:---:|:---:|:---:|:---:|
-|[박창현](https://github.com/web-doh) |[✨정채은✨](Chae-EunJeong) |[오재문](DECOY-DUCK)| [정하은](https://github.com/web-doh)|
+|[박창현](https://github.com/BusChanny) |[✨정채은✨](https://github.com/Chae-EunJeong) |[오재문](https://github.com/DECOY-DUCK)| [정하은](https://github.com/Haeun-Jung)|
 |[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=pch1656">](https://solved.ac/profile/pch1656)|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=procdso">](https://solved.ac/profile/procdso)|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=tph01198">](https://solved.ac/profile/tph01198)|[<img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=gkdms325">](https://solved.ac/profile/gkdms325)|   
    
 <br>  

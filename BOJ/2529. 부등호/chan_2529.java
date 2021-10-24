@@ -50,7 +50,7 @@ public class chan_2529 {
                 continue;
 
             ansNum[cnt] = numbers[i];
-            // 부등호 관계를 만족하지 않으면 continue
+            // 부등호 관계를 만족하지 않으면 continue(백트래킹)
             if (cnt > 0) {
                 if ("<".equals(input[cnt - 1])) {
                     if (ansNum[cnt - 1] > ansNum[cnt])

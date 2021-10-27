@@ -1,0 +1,1 @@
+[백준 - 18428. 감시피하기](https://www.acmicpc.net/problem/18428)

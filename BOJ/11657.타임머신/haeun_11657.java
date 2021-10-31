@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class BOJ_11657_타임머신 {
 	
 	public static int N, M;
-	public static int[] distance;
+	public static long[] distance;
 	public static ArrayList<Edge> list = new ArrayList<>();
 	public static int INF = 123456789;
 	
@@ -28,7 +28,7 @@ public class BOJ_11657_타임머신 {
 		N = Integer.parseInt(st.nextToken());			// 도시의 개수
 		M = Integer.parseInt(st.nextToken());			// 버스 노선의 개수
 		
-		distance = new int[N+1];
+		distance = new long[N+1];
 		Arrays.fill(distance, INF);						// 최댓값으로 설정
 		
 		for (int i = 0; i < M; i++) {

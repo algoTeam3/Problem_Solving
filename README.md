@@ -21,7 +21,7 @@
 
 ```java
 
- while(!stack.isempty()){
+ while (!stack.isEmpty()) {
   
   DFS();
 

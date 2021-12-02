@@ -66,6 +66,6 @@
 - [fork된 레포지토리 최신상태 유지하는 법](https://jybaek.tistory.com/775)   
 
 1) 새로운 branch 생성  
-2) 새로 만든 branch에 코드를 push합니다.  
+2) 새로 만든 branch에 코드 push
 3) push 완료 후 GitHub branch 페이지에서 Pull Request(PR) 버튼 클릭
-4) 코드 리뷰 받고 <b>스터디 시간 전에 merge</b>하면 됩니다. (merge 후 branch 삭제)
+4) 코드 리뷰 받고 <b>스터디 시간 전에 merge</b> (merge 후 branch 삭제)

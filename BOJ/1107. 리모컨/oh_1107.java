@@ -18,46 +18,53 @@ import java.util.StringTokenizer;
  * @description
  **/
 
-public class oh_1107 {
-
+public class BOJ1107 {
     public static void main(String[] args) throws IOException {
+        StringTokenizer st;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        //0-9까지
-        boolean[] key = new boolean[10];
-        //목표
-        int target = Integer.parseInt(br.readLine());
-        //고장난  숫자
-        int T = Integer.parseInt(br.readLine());
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < T; i++) {
-            key[Integer.parseInt(st.nextToken())] = true;
-        }
-        //+-버튼으로만 눌려서 
-        int answer = Math.abs(target - 100);
-        //가까운 채널로 가서 +-
-        for (int i = 0; i < 9999999; i++) {
-            //갈수 있는 채널인가
-            boolean flag = true;
-            int num = i;
-            int len = 0;
+        int start = 100;                                // 시작채널
+        int N = Integer.parseInt(br.readLine());        // 이동하려는 채널
+        int M = Integer.parseInt(br.readLine());        // 고장난 버튼
+        int answer = 0;
+        boolean[] error = new boolean[10];              // 고장난 숫자
 
-            while (num > 0) {
-                int check = num % 10;
-                if (key[check]) {
+        //고장난 버튼 체크
+        if(M!=0){
+            st = new StringTokenizer(br.readLine());
+            for (int i = 0; i < M; i++) {
+                int num = Integer.parseInt(st.nextToken());
+                error[num] = true;
+            }
+        }
+        //+,-버튼으로만 이동할경우
+        answer = Math.abs(N - start);
+
+        //숫자로 이동후 +,-
+        for (int i = 0; i < 1000000; i++) {
+            boolean flag = true;
+            int check = i;
+
+
+
+            while (check / 10 != 0) {
+                if (error[check % 10]) {
                     flag = false;
                     break;
-                } else {
-                    num /= 10;
                 }
-                len++;
+                check /= 10;
             }
-            if(i==0){
-                answer = Math.min(answer, 1 + (Math.abs(target - i)));
+
+            if (error[check % 10]) {
+                flag = false;
             }
+
             if (flag) {
-                answer = Math.min(answer, len + (Math.abs(target - i)));
+                int buttenCount = Integer.toString(i).length();
+                int gap = Math.abs(N - i);
+                answer = Math.min(answer, buttenCount + gap);
             }
         }
+
         System.out.println(answer);
     }
 }

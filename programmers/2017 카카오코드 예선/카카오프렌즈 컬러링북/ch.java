@@ -3,7 +3,9 @@ import java.util.*;
 class ch {
     public static int maxSizeOfOneArea;
     public static boolean[][] visited;
+
     public static int[][] copy;
+
     public int[] solution(int m, int n, int[][] picture) {
         maxSizeOfOneArea = 0;
         int numberOfArea = 0;

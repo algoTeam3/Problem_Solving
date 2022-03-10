@@ -1,102 +1,135 @@
-import java.util.*;
+package BOJ.Gold;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+/**
+ * @packageName : BOJ.Gold
+ * @fileName : BOJ16234
+ * @date : 2022-01-22
+ * @language : JAVA
+ * @classification :
+ * @time_limit : 2sec
+ * @required_time : 00:40 ~ 01:22
+ * @submissions : 1
+ * @description :
+ **/
 public class oh_16234 {
-    
-    static int n;
-    static int L;
-    static int R;
-    static int map[][];
-    static boolean visited[][];
-    
-    static int dx[] = {1,-1,0,0};
-    static int dy[] = {0,0,1,-1};
-    
-    public static void main(String [] args){
-        Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        L = sc.nextInt();
-        R = sc.nextInt();
-        int sec = 0;
-        map = new int[n][n];
-        
-        
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                map[i][j]=sc.nextInt();
-            }
+
+    private static int count;
+
+    private static class xy {
+        int x;
+        int y;
+        int val;
+
+        private xy(int x,int y,int val){
+
+            this.x=x;
+            this.y=y;
+            this.val = val;
         }
-        
-        while(true){
-            visited = new boolean[n][n]; // 방문 초기화
-            if(!check()){
-                sec++;  // 인구이동이 또 필요한 경우
-            } else {
-                break; 
-            }
-        }
-        
-        System.out.println(sec);
-        
+
     }
-    
-    // 인구 이동 필요한지 전체 지도 확인.
-    public static boolean check(){
-        List<Node> n_list;
-        boolean isDone = true;  // 이동이 더이상 필요하지 않을 경우 true. 필요한 경우 false
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                // 방문하지 않은 경우
-                if(!visited[i][j]){
-                    n_list = new LinkedList<>();
-                    n_list.add(new Node(i,j));
-                    // sum - 리스트에 저장된 값의 합.
-                    int sum = dfs(i,j,n_list,0);
-                    if(n_list.size() > 1){ // 리스트 크기가 1 이상일 경우(= 인구이동이 필요한 데이터가 있을경우)
-                        change(sum,n_list); // 평균값 계산해서 map 갱신.
-                        isDone= false; 
+
+    private static int[] visited;
+    private static xy[] map;
+    private static ArrayList<ArrayList<Integer>> arr;
+    private static int[][] dir ={{-1,0},{1,0},{0,-1},{0,1}};
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n =Integer.parseInt(st.nextToken());
+        int l =Integer.parseInt(st.nextToken());
+        int r =Integer.parseInt(st.nextToken());
+
+        map = new xy[n*n];
+
+
+
+        //정보입력
+        for (int i = 0; i < n; i++) {
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < n; j++) {
+                map[n*i+j]=new xy(i,j,Integer.parseInt(st.nextToken()));
+            }
+        }
+        int day =0;
+        while(true){
+            visited = new int[n*n];
+            arr = new ArrayList<>();
+            //간선체크
+            boolean flag =true;
+            for (int i = 0; i < n*n; i++) {
+                arr.add(new ArrayList<>());
+            }
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+
+                    for (int k = 0; k < 4; k++) {
+                        int nr = i + dir[k][0];
+                        int nc = j + dir[k][1];
+
+                        if(nr<0||nc<0||nr>=n||nc>=n)continue;
+                        int gap = Math.abs(map[n*i+j].val-map[n*nr+nc].val);
+                        if(gap>=l&&gap<=r){
+                            flag =false;
+                            int from = n*i+j;
+                            int to =n*nr+nc;
+
+                            arr.get(from).add(to);
+//                            System.out.println(from+" "+to);
+                        }
                     }
                 }
             }
-        }
-        return isDone;
-    }
-    
-    
-    public static void change(int sum,List<Node> n_list){
-        int avg = sum/n_list.size();
-        for(Node node:n_list){
-            map[node.x][node.y] = avg;
-        }
-    }
-    
-    
-    public static int dfs(int x, int y, List<Node> n_list, int sum){
-        visited[x][y] =true;
-        sum= map[x][y];
-        
-        for(int i=0;i<4;i++){
-            int next_x = x+dx[i];
-            int next_y = y+dy[i];
-            
-            if(next_x < 0 || next_x >=n || next_y <0 || next_y >=n ){
-                continue;
+            if(flag)break;
+            day++;
+
+            //이동
+            count = 1;
+            ArrayList<Integer> mod = new ArrayList<>();
+            for (int i = 0; i < arr.size(); i++) {
+                if(arr.get(i).size()!=0&&visited[i]==0){
+                    mod.add(bfs(i));
+                    count++;
+                }
             }
-            if(!visited[next_x][next_y]){
-                int d = Math.abs(map[x][y] - map[next_x][next_y]);
-                if(d >= L && d <= R){
-                    n_list.add(new Node(next_x,next_y));
-                    sum+= dfs(next_x,next_y,n_list,sum);
+            for (int i = 0; i < map.length; i++) {
+                if(visited[i]!=0){
+                    map[i].val=mod.get(visited[i]-1);
                 }
             }
         }
-        return sum;
-    }    
-    
-}
-class Node{
-    int x;
-    int y;
-    public Node(int x, int y){
-        this.x = x;
-        this.y = y;
+        System.out.println(day);
+    }
+
+    private static int bfs(int num) {
+        int cell =1;
+        int sum = map[num].val;
+        Queue<Integer> que = new LinkedList<>();
+        que.add(num);
+        visited[num]=count;
+
+        while (!que.isEmpty()){
+            int z = que.poll();
+
+            for (int i = 0; i < arr.get(z).size(); i++) {
+                int next = arr.get(z).get(i);
+                if(visited[next]==0){
+                    visited[next]=count;
+                    cell++;
+                    sum += map[next].val;
+                    que.add(next);
+                }
+            }
+        }
+        return sum/cell;
     }
 }

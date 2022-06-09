@@ -24,11 +24,7 @@ public class ch_1541 {
             }
 
             // 첫 번째 수 판별
-            if (sum == Integer.MAX_VALUE) {
-                sum = temp;
-            }else {
-                sum -= temp;
-            }
+            sum = (sum == Integer.MAX_VALUE) ?  temp : sum - temp;
         }
         System.out.println(sum);
     }
